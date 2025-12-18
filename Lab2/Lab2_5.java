@@ -13,3 +13,4 @@ public class Lab2_5 {
         System.out.println(lastName + " " + firstName);
     }
 }
+`
