@@ -1,4 +1,4 @@
-// Lab3_6.java
+
 // Program to overload subtract method with various parameters
 
 import java.util.Scanner;
