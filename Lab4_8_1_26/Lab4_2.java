@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+// Plate class
+class Plate {
+    double length, width;
+
+    Plate(double l, double w) {
+        length = l;
+        width = w;
+        System.out.println("Plate Dimensions:");
+        System.out.println("Length = " + length);
+        System.out.println("Width  = " + width);
+    }
+}
+
+// Box class inheriting Plate
+class Box extends Plate {
+    double height;
+
+    Box(double l, double w, double h) {
+        super(l, w);   // calls Plate constructor
+        height = h;
+        System.out.println("Box Dimensions:");
+        System.out.println("Height = " + height);
+    }
+}
+
+// WoodBox class inheriting Box
+class WoodBox extends Box {
+    double thick;
+
+    WoodBox(double l, double w, double h, double t) {
+        super(l, w, h);   // calls Box constructor
+        thick = t;
+        System.out.println("WoodBox Dimensions:");
+        System.out.println("Thickness = " + thick);
+    }
+}
+
+// Main class
+public class Lab4_2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter length: ");
+        double l = sc.nextDouble();
+
+        System.out.print("Enter width: ");
+        double w = sc.nextDouble();
+
+        System.out.print("Enter height: ");
+        double h = sc.nextDouble();
+
+        System.out.print("Enter thickness: ");
+        double t = sc.nextDouble();
+
+        // Creating object of WoodBox
+        WoodBox wb = new WoodBox(l, w, h, t);
+    }
+}

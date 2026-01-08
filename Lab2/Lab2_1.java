@@ -3,6 +3,6 @@ public class Lab2_1{
          System.out.println(" Display Name- Subhadra Singh Chauhan");
          System.out.println(" Display Roll No- 24155585");
          System.out.println(" Display Section - CSE 48");
-         System.out.println(" Display Branch - CSE(AI&ML)");
+         System.out.printl n(" Display Branch - CSE(AI&ML)");
          }
          }
