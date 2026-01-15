@@ -1,0 +1,34 @@
+interface Motor {
+    int capacity = 5;   // interface data member
+
+    void run();
+    void consume();
+}
+
+class WashingMachine implements Motor {
+
+    // Implementing methods
+    public void run() {
+        System.out.println("Motor is running");
+    }
+
+    public void consume() {
+        System.out.println("Motor is consuming power");
+    }
+
+    // Method to display capacity
+    void displayCapacity() {
+        System.out.println("Capacity of the motor is " + capacity);
+    }
+}
+
+public class lab5_2 {
+    public static void main(String[] args) {
+
+        WashingMachine wm = new WashingMachine();
+
+        wm.run();
+        wm.consume();
+        wm.displayCapacity();
+    }
+}

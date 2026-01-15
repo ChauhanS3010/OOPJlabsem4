@@ -45,7 +45,8 @@ public class Lab3_5 {
             System.out.println(
                     "Roll No: " + students[i].roll +
                             ", Name: " + students[i].name +
-                            ", CGPA: " + students[i].cgpa
+
+                      ", CGPA: " + students[i].cgpa
             );
         }
 

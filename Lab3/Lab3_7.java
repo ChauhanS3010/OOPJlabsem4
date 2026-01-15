@@ -1,4 +1,3 @@
-
 // Program to calculate area of rectangle using constructor overloading
 
 import java.util.Scanner;
